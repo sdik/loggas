@@ -1,0 +1,239 @@
+--- 
+cursor_positions: 
+  - :path: db/migrate/20130111165114_add_nome_from_cliente.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-11 13:51:14.944000 -03:00
+  - :path: db/migrate/20130110235421_create_clientes.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 20:54:21.940000 -03:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:46.527000 -03:00
+  - :path: db/migrate/20130110230258_create_notafiscals.rb
+    :cursor_offset: 252
+    :timestamp: 2013-01-10 20:07:47.533000 -03:00
+  - :path: db/migrate/20130111130432_remove_nome_from_cliente.rb
+    :cursor_offset: 100
+    :timestamp: 2013-01-11 13:49:12.092000 -03:00
+  - :path: db/seeds.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.413000 -03:00
+  - :path: db/development.sqlite3
+    :cursor_offset: 0
+    :timestamp: 2013-01-11 22:16:18.053000 -03:00
+  - :path: config/boot.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.360000 -03:00
+  - :path: config/locales/en.yml
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.356000 -03:00
+  - :path: app/views/notafiscals/edit.html.erb
+    :cursor_offset: 24
+    :timestamp: 2013-01-15 12:12:25.181000 -03:00
+  - :path: app/views/notafiscals/new.html.erb
+    :cursor_offset: 20
+    :timestamp: 2013-01-15 12:31:48.205000 -03:00
+  - :path: app/helpers/clientes_helper.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 20:54:22.500000 -03:00
+  - :path: config/environments/development.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:46.675000 -03:00
+  - :path: db/migrate/20130111235822_remove_cliente_to_notafiscal.rb
+    :cursor_offset: 71
+    :timestamp: 2013-01-11 22:22:12.900000 -03:00
+    :selection_offset: 107
+    :block_selection_mode: false
+  - :path: db/migrate/20130112002339_add_cliente_id_to_nota_fiscal.rb
+    :cursor_offset: 115
+    :timestamp: 2013-01-11 21:29:35.384000 -03:00
+  - :path: db/migrate/20130114225913_add_cliente_id_to_notafiscal.rb
+    :cursor_offset: 155
+    :timestamp: 2013-01-14 20:02:19.521000 -03:00
+  - :path: app/views/clientes/show.html.erb
+    :cursor_offset: 934
+    :timestamp: 2013-01-15 09:04:01.588000 -03:00
+  - :path: config/environment.rb
+    :cursor_offset: 82
+    :timestamp: 2013-01-10 19:52:46.653000 -03:00
+  - :path: config/initializers/formato_data.rb
+    :cursor_offset: 40
+    :timestamp: 2013-01-17 09:38:02.148000 -03:00
+  - :path: config/locales/pt-BR.yml
+    :cursor_offset: 144
+    :timestamp: 2013-01-17 09:32:33.561000 -03:00
+  - :path: config/initializers/backtrace_silencers.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:46.717000 -03:00
+  - :path: config/initializers/wrap_parameters.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.317000 -03:00
+  - :path: config/initializers/session_store.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.313000 -03:00
+  - :path: config/initializers/secret_token.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.308000 -03:00
+  - :path: config/initializers/mime_types.rb
+    :cursor_offset: 205
+    :timestamp: 2013-01-10 19:52:46.728000 -03:00
+  - :path: config/initializers/inflections.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:46.723000 -03:00
+  - :path: app/models/notafiscal.rb
+    :cursor_offset: 78
+    :timestamp: 2013-01-15 09:37:34.835000 -03:00
+    :selection_offset: 41
+    :block_selection_mode: false
+  - :path: app/controllers/notafiscals_controller.rb
+    :cursor_offset: 884
+    :timestamp: 2013-01-10 20:02:58.429000 -03:00
+  - :path: config/application.rb
+    :cursor_offset: 1629
+    :timestamp: 2013-01-25 11:04:03.144000 -03:00
+  - :path: config/database.yml
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:48.399000 -03:00
+  - :path: app/views/implates/new.html.erb
+    :cursor_offset: 41
+    :timestamp: 2013-01-17 14:47:22.882000 -03:00
+  - :path: app/views/tecnicos/edit.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-17 16:37:59.574000 -03:00
+  - :path: app/views/detales/index.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-25 08:35:58.985000 -03:00
+  - :path: app/views/detales/new.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-25 08:35:58.998000 -03:00
+  - :path: app/views/tecnicos/new.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-17 16:37:59.603000 -03:00
+  - :path: app/views/tecnicos/show.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-17 16:37:59.592000 -03:00
+  - :path: app/views/tecnicos/_form.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-17 16:37:59.613000 -03:00
+  - :path: app/views/detales/edit.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-25 08:35:59.045000 -03:00
+  - :path: app/views/detales/show.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-25 08:35:58.994000 -03:00
+  - :path: config/routes.rb
+    :cursor_offset: 249
+    :timestamp: 2013-01-25 13:16:47.456000 -03:00
+  - :path: db/migrate/20130124232715_create_detales.rb
+    :cursor_offset: 141
+    :timestamp: 2013-01-25 13:26:23.517000 -03:00
+  - :path: app/views/notafiscals/show.html.erb
+    :cursor_offset: 44
+    :timestamp: 2013-01-17 10:52:11.451000 -03:00
+  - :path: app/views/servicos/new.html.erb
+    :cursor_offset: 24
+    :timestamp: 2013-01-17 17:19:41.106000 -03:00
+  - :path: app/controllers/servicos_controller.rb
+    :cursor_offset: 1938
+    :timestamp: 2013-01-17 17:23:44.187000 -03:00
+  - :path: app/views/notafiscals/index.html.erb
+    :cursor_offset: 784
+    :timestamp: 2013-01-17 09:59:39.776000 -03:00
+  - :path: app/views/notafiscals/_form.html.erb
+    :cursor_offset: 1446
+    :timestamp: 2013-01-17 09:35:01.199000 -03:00
+  - :path: app/views/servicos/edit.html.erb
+    :cursor_offset: 23
+    :timestamp: 2013-01-17 17:19:31.330000 -03:00
+  - :path: app/views/servicos/_form.html.erb
+    :cursor_offset: 3268
+    :timestamp: 2013-01-17 17:41:42.395000 -03:00
+  - :path: app/models/implate.rb
+    :cursor_offset: 162
+    :timestamp: 2013-01-25 13:21:47.944000 -03:00
+  - :path: app/models/cliente.rb
+    :cursor_offset: 68
+    :timestamp: 2013-01-15 09:07:28.931000 -03:00
+  - :path: app/assets/images/log.gif
+    :cursor_offset: 0
+    :timestamp: 2013-01-25 20:06:39.313000 -03:00
+  - :path: app/views/consultors/_form.html.erb
+    :cursor_offset: 388
+    :timestamp: 2013-01-17 16:38:47.377000 -03:00
+  - :path: app/views/consultors/index.html.erb
+    :cursor_offset: 0
+    :timestamp: 2013-01-17 16:38:47.345000 -03:00
+  - :path: app/models/produto.rb
+    :cursor_offset: 0
+    :timestamp: 2013-01-25 15:17:44.948000 -03:00
+  - :path: app/models/detale.rb
+    :cursor_offset: 199
+    :timestamp: 2013-02-08 21:29:13.851000 -03:00
+  - :path: app/views/implates/_form.html.erb
+    :cursor_offset: 722
+    :timestamp: 2013-02-09 14:45:43.591000 -03:00
+  - :path: app/views/implates/_detale.html.erb
+    :cursor_offset: 287
+    :timestamp: 2013-01-25 15:21:32.457000 -03:00
+  - :path: app/views/implates/show.html.erb
+    :cursor_offset: 1618
+    :timestamp: 2013-02-10 09:19:11.677000 -03:00
+  - :path: app/views/implates/index.html.erb
+    :cursor_offset: 941
+    :timestamp: 2013-02-09 15:37:07.284000 -03:00
+  - :path: app/views/servicos/index.html.erb
+    :cursor_offset: 715
+    :timestamp: 2013-02-09 14:12:15.065000 -03:00
+  - :path: app/views/servicos/show.html.erb
+    :cursor_offset: 296
+    :timestamp: 2013-01-25 15:39:14.591000 -03:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 638
+    :timestamp: 2013-01-25 20:48:35.537000 -03:00
+  - :path: app/views/clientes/index.html.erb
+    :cursor_offset: 65
+    :timestamp: 2013-01-25 21:35:56.857000 -03:00
+    :selection_offset: 355
+    :block_selection_mode: false
+  - :path: app/controllers/detales_controller.rb
+    :cursor_offset: 879
+    :timestamp: 2013-02-08 21:01:06.092000 -03:00
+  - :path: db/schema.rb
+    :cursor_offset: 1498
+    :timestamp: 2013-01-25 15:22:14.089000 -03:00
+  - :path: .gitignore
+    :cursor_offset: 0
+    :timestamp: 2013-01-10 19:52:46.322000 -03:00
+  - :path: Gemfile
+    :cursor_offset: 460
+    :timestamp: 2013-01-17 21:50:12.847000 -03:00
+  - :path: app/views/clientes/_form.html.erb
+    :cursor_offset: 1223
+    :timestamp: 2013-02-09 11:32:06.703000 -03:00
+  - :path: app/views/clientes/edit.html.erb
+    :cursor_offset: 14
+    :timestamp: 2013-01-10 20:57:44.588000 -03:00
+  - :path: app/views/clientes/new.html.erb
+    :cursor_offset: 15
+    :timestamp: 2013-01-10 20:58:04.698000 -03:00
+  - :path: app/controllers/clientes_controller.rb
+    :cursor_offset: 173
+    :timestamp: 2013-01-17 21:53:52.119000 -03:00
+  - :path: app/controllers/implates_controller.rb
+    :cursor_offset: 116
+    :timestamp: 2013-02-09 13:06:15.753000 -03:00
+    :selection_offset: 123
+    :block_selection_mode: false
+  - :path: app/models/servico.rb
+    :cursor_offset: 195
+    :timestamp: 2013-01-17 16:57:51.610000 -03:00
+  - :path: app/assets/stylesheets/bootstrap.css
+    :cursor_offset: 35458
+    :timestamp: 2013-02-09 14:14:54.202000 -03:00
+  - :path: app/views/tecnicos/index.html.erb
+    :cursor_offset: 183
+    :timestamp: 2013-01-17 16:37:59.567000 -03:00
+  - :path: app/views/implates/edit.html.erb
+    :cursor_offset: 35
+    :timestamp: 2013-01-25 15:03:34.681000 -03:00
+files_to_retain: 0

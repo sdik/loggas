@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <h1>produto</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong>Descricao:</strong></dt>
+  <dd><%= @produto.descricao %></dd>
+  <dt><strong>Quantidade:</strong></dt>
+  <dd><%= @produto.quantidade %></dd>
+  <dt><strong>Compra:</strong></dt>
+  <dd><%= @produto.compra %></dd>
+  <dt><strong>Venda:</strong></dt>
+  <dd><%= @produto.venda %></dd>
+  <dt><strong>Minimo:</strong></dt>
+  <dd><%= @produto.minimo %></dd>
+  <dt><strong>Fornecedor:</strong></dt>
+  <dd><%= @produto.fornecedor %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to 'Voltar', produtos_path, :class=>"btn" %>
+  <%= link_to 'Editar', edit_produto_path(@produto),:class => "btn" %> 
+  <%= link_to 'Apagar', @produto, confirm: 'Desejas Apagar?',method: :delete ,:class => 'btn btn-danger'%>
+</div>

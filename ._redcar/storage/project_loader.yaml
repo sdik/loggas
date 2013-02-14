@@ -1,0 +1,27 @@
+--- 
+open_files: 
+  - app/views/consultors/_form.html.erb
+  - app/views/consultors/index.html.erb
+  - app/models/produto.rb
+  - app/models/detale.rb
+  - app/views/implates/_form.html.erb
+  - app/views/implates/_detale.html.erb
+  - app/views/implates/show.html.erb
+  - app/views/implates/index.html.erb
+  - app/views/servicos/index.html.erb
+  - app/views/servicos/show.html.erb
+  - app/views/layouts/application.html.erb
+  - app/views/clientes/index.html.erb
+  - app/controllers/detales_controller.rb
+  - db/schema.rb
+  - .gitignore
+  - Gemfile
+  - app/views/clientes/_form.html.erb
+  - app/views/clientes/edit.html.erb
+  - app/views/clientes/new.html.erb
+  - app/controllers/clientes_controller.rb
+  - app/controllers/implates_controller.rb
+  - app/models/servico.rb
+  - app/assets/stylesheets/bootstrap.css
+  - app/views/tecnicos/index.html.erb
+  - app/views/implates/edit.html.erb

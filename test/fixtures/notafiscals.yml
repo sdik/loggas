@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numero: 
+  data: 2013-01-10
+  cliente: MyString
+  valor: 9.99
+  status: MyString
+  ok: false
+
+two:
+  numero: 
+  data: 2013-01-10
+  cliente: MyString
+  valor: 9.99
+  status: MyString
+  ok: false

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  descricao: MyString
+  quantidade: 1
+  compra: 9.99
+  venda: 9.99
+  minimo: 1
+  fornecedor: MyString
+
+two:
+  descricao: MyString
+  quantidade: 1
+  compra: 9.99
+  venda: 9.99
+  minimo: 1
+  fornecedor: MyString

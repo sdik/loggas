@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <h1>tecnico</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong>Nome:</strong></dt>
+  <dd><%= @tecnico.nome %></dd>
+  <dt><strong>Telefone:</strong></dt>
+  <dd><%= @tecnico.telefone %></dd>
+  <dt><strong>Email:</strong></dt>
+  <dd><%= @tecnico.email %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to 'Voltar', tecnicos_path, :class=>"btn" %>
+  <%= link_to 'Editar', edit_tecnico_path(@tecnico),:class => "btn" %> 
+  <%= link_to 'Apagar', @tecnico, confirm: 'Desejas Apagar?',method: :delete ,:class => 'btn btn-danger'%>
+</div>

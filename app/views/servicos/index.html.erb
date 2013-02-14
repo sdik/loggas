@@ -1,0 +1,76 @@
+<% if notice.to_s.size > 0 %>
+<p id="notice" class="alert alert-info"><%= notice %></p>
+<%end%>
+<div class="page-header">
+  <h1>Instalações</h1>
+</div>
+
+<table class="table table-striped table-condensed table-hover">
+  <tr>
+    <th>Código</th>
+    <th>Data</th>
+    <th>Cliente</th>
+    <th>Cidade</th>
+    <th>Material</th>
+    <th>Status</th>
+    <th>Tanque</th>
+    <th>Interlig</th>
+    <th>ART</th>
+    <th>Foto</th>
+    <th>Tecnico</th>
+    <th>Consultor</th>
+    <th>Sistema</th>
+    <th>Faturado</th>
+    <th>Obs</th>
+    <th></th>
+ </tr>
+
+<% @servicos.each do |servico| %>
+  <tr>
+    <td><h4><%= servico.id %></h4></td>
+    <td><%= servico.data.strftime("%d/%m/%Y") %></td>
+    <td><%= servico.cliente.nome%></td>
+    <td><%= servico.cidade %></td>
+    <td><%= servico.material %></td>
+    <td><%= servico.status %></td>    
+    <% if servico.tanque.to_s == 'true' %> 
+      <td> <span class="badge badge-success">S</span> </td>
+    <%else%>
+     <td> <span class="badge badge-important">N</span> </td> 
+    <%end%>
+    <% if servico.interlig.to_s == 'true' %> 
+      <td> <span class="badge badge-success">S</span> </td>
+    <%else%>
+     <td> <span class="badge badge-important">N</span> </td> 
+    <%end%>
+     <% if servico.art.to_s == 'Enviado' %> 
+      <td> <span class="label label-warning">Enviado</span> </td>
+    <%elsif servico.art.to_s == 'Boleto' %>
+     <td> <span class="label label-important">Boleto</span> </td> 
+    <%elsif servico.art.to_s == 'Pago' %>
+     <td> <span class="label label-info">Pago</span> </td> 
+    <%elsif servico.art.to_s == 'Ok' %>
+     <td> <span class="label label-success">Ok</span> </td> 
+    <%end%>
+    <% if servico.foto.to_s == 'true' %> 
+      <td> <span class="badge badge-success">S</span> </td>
+    <%else%>
+     <td> <span class="badge badge-important">N</span> </td> 
+    <%end%>
+    <td><%= servico.tecnico.nome %></td>
+    <td><%= servico.consultor.nome %></td>
+    <td><%= servico.sistema %></td>
+    <% if servico.faturado.to_s == 'true' %> 
+      <td> <span class="badge badge-success">S</span> </td>
+    <%else%>
+     <td> <span class="badge badge-important">N</span> </td> 
+    <%end%>
+    <td><%= servico.obs %></td>
+    <td><%= link_to 'Editar', edit_servico_path(servico),:class => "btn btn-mini" %> <%= link_to 'Apagar', servico, confirm: 'Desejas Apagar?', method: :delete ,:class => 'btn btn-mini btn-danger'%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Adicionar Instalação', new_servico_path, :class => "btn btn-small btn-primary" %>

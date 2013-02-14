@@ -1,0 +1,118 @@
+<%= form_for(@servico, :html => {:class => "form-horizontal"}) do |f| %>
+  <% if @servico.errors.any? %>
+    <div id="error_explanation" class="alert alert-error">
+      <h2><%= pluralize(@servico.errors.count, "error") %> prohibited this servico from being saved:</h2>
+       <ul>
+      <% @servico.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <fieldset>
+  <div class="control-group">
+    <%= f.label :data,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.date_select :data, :order => [:day, :month, :year], :use_month_names => %w(Janeiro Fevereiro Marco Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro)%>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :cliente_id,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.collection_select :cliente_id, Cliente.find(:all), :id, :nome %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :cidade,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :cidade %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :material,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :material %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :status,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.select :status, ['Inst. Realizada','Alt. Realizada','Teste Aprovado'] %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :tanque,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.check_box :tanque %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :interlig,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.check_box :interlig %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :art,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.select :art, ['Enviado','Boleto','Pago','Ok'] %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :foto,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.check_box :foto %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :tecnico_id,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.collection_select :tecnico_id, Tecnico.find(:all, :order=>'nome'), :id, :nome %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :consultor_id,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.collection_select :consultor_id, Consultor.find(:all, :order => 'nome' ), :id, :nome%>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :sistema,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.select :sistema, ['Email','Sistema'] %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :faturado,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.check_box :faturado %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :obs,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_area :obs %>
+    </div>
+    </div>
+<br/>
+  <div class="form-actions">
+    <%= f.submit  'Cria Instalação', :class => 'btn btn-small btn-primary' %>
+    <%= link_to 'Voltar', servicos_path, :class=>'btn btn-small' %>
+  </div>
+</fieldset>
+<% end %>
+

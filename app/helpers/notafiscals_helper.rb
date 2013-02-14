@@ -1,0 +1,2 @@
+module NotafiscalsHelper
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  produto_id: 1
+  qunatidade: 1
+  unitario: 9.99
+  total: 9.99
+  implante_id: 
+
+two:
+  produto_id: 1
+  qunatidade: 1
+  unitario: 9.99
+  total: 9.99
+  implante_id: 

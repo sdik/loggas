@@ -1,0 +1,29 @@
+<p id="notice" class="alert alert-info"><%= notice %></p>
+<div class="page-header">
+  <h1>Nota Fiscal</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong>Numero:</strong></dt>
+  <dd><%= @notafiscal.numero %> </dd>
+  <dt><strong>Data:</strong></dt>
+  <dd><%= @notafiscal.data.strftime("%d/%m/%Y") %></dd>
+  <dt><strong>Cliente:</strong></dt>
+  <dd><%= @notafiscal.cliente.nome %></dd>
+  <dt><strong>Valor:</strong></dt>
+  <dd><%= @notafiscal.valor %></dd>
+  <dt><strong>Status:</strong></dt>
+  <dd><%= @notafiscal.status.size > 0?"#{@notafiscal.status}":" - "%></dd>
+  <dt><strong>Ok:</strong></dt>
+   <% if @notafiscal.ok.to_s == 'true' %> 
+   <dd> <span class="badge badge-success">S</span> </dd>
+    <%else%>
+     <dd> <span class="badge badge-important">N</span> </dd> 
+    <%end%>
+</dl>
+
+<div class="form-actions">
+  <%= link_to 'Voltar', notafiscals_path, :class=>"btn" %>
+  <%= link_to 'Editar', edit_notafiscal_path(@notafiscal),:class => "btn" %> 
+  <%= link_to 'Apagar', @notafiscal, confirm: 'Desejas Apagar?',method: :delete ,:class => 'btn btn-danger'%>
+</div>

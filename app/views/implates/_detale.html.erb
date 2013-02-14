@@ -1,0 +1,29 @@
+<%= form_for([@implate, @implate.detales.build], :html => {:class => "form-horizontal"}) do |f| %>
+ <fieldset>
+  <div class="control-group">
+    <%= f.label :produto_id,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.collection_select :produto_id, Produto.find(:all), :id, :descricao %> 
+   </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :quantidade,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :quantidade %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :unitario, :class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :unitario %>
+    </div>
+    </div>
+<br/>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-small btn-primary' %>
+  </div>
+</fieldset>
+<% end %>

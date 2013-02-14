@@ -1,0 +1,41 @@
+<p id="notice" class="alert alert-info"><%= notice %></p>
+<div class="page-header">
+  <h1>Instalação</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong>Data:</strong></dt>
+  <dd><%= @servico.data.strftime("%d/%m/%Y") %></dd>
+  <dt><strong>Cliente:</strong></dt>
+  <dd><%= @servico.cliente.nome %></dd>
+  <dt><strong>Cidade:</strong></dt>
+  <dd><%= @servico.cidade %></dd>
+  <dt><strong>Material:</strong></dt>
+  <dd><%= @servico.material %></dd>
+  <dt><strong>Status:</strong></dt>
+  <dd><%= @servico.status %></dd>
+  <dt><strong>Tanque:</strong></dt>
+  <dd><%= @servico.tanque %></dd>
+  <dt><strong>Interlig:</strong></dt>
+  <dd><%= @servico.interlig %></dd>
+  <dt><strong>Art:</strong></dt>
+  <dd><%= @servico.art %></dd>
+  <dt><strong>Foto:</strong></dt>
+  <dd><%= @servico.foto %></dd>
+  <dt><strong>Tecnico:</strong></dt>
+  <dd><%= @servico.tecnico_id %></dd>
+  <dt><strong>Consultor:</strong></dt>
+  <dd><%= @servico.consultor_id %></dd>
+  <dt><strong>Sistema:</strong></dt>
+  <dd><%= @servico.sistema %></dd>
+  <dt><strong>Faturado:</strong></dt>
+  <dd><%= @servico.faturado %></dd>
+  <dt><strong>Obs:</strong></dt>
+  <dd><%= @servico.obs %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to 'Voltar', servicos_path, :class=>"btn" %>
+  <%= link_to 'Editar', edit_servico_path(@servico),:class => "btn" %> 
+  <%= link_to 'Apagar', @servico, confirm: 'Desejas Apagar?',method: :delete ,:class => 'btn btn-danger'%>
+</div>

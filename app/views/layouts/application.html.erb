@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loggas</title>
+  <%= stylesheet_link_tag    "bootstrap.css", :media => "screen" %>
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "print.css", :media => "print" %>
+  <%= csrf_meta_tags %>
+  <style> 
+     #alinha-dir { text-align: right; }
+     #alinha-centro { text-align: center;}
+  </style>
+</head>
+<body>
+ <div class= "navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#"><%= image_tag("log1.png", :size => "21x21")%></a>
+    <ul class="nav">
+       <% ActiveRecord::Base.connection.tables.each do |t| %>
+       <%unless t.to_s == 'schema_migrations' %>   
+       <li class=""><a href="../<%=t.to_s%>"><%=t.capitalize%></a></li>
+       <%end%>
+       <%end%>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+    <%= yield %>
+</div>
+</body>
+</html>

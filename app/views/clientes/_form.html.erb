@@ -1,0 +1,76 @@
+<%= form_for(@cliente, :html => {:class => "form-horizontal"}) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation", class="alert alert-error">
+      <h3><%= pluralize(@cliente.errors.count, "Erro(s)") %> impede(m) de salvar:</h3>
+       <ul>
+      <% @cliente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <fieldset>
+  <div class="control-group">
+    <%= f.label :nome,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :nome %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :endereco,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :endereco %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :bairro,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :bairro %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :cidade,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :cidade %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :uf, :class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.select :uf, ['CE', 'AC', 'AL', 'AP', 'AM', 'BA', 'DF', 'GO', 'ES', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SP', 'SC', 'SE', 'TO'] %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :telefone,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.telephone_field :telefone %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :email,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.email_field :email %>
+    </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :contato,:class =>'control-label' %>
+    <div class="controls">
+    
+    <%= f.text_field :contato %>
+    </div>
+    </div>
+<br/>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-small btn-primary' %>
+    <%= link_to 'Voltar', clientes_path, :class=>'btn btn-small' %>
+  </div>
+</fieldset>
+<% end %>
+

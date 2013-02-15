@@ -1,4 +1,4 @@
-1360704893
+1360888497
 AddClienteIdToNotaFiscal	C:/Users/SEMP/rails/loggas/db/migrate/20130112002339_add_cliente_id_to_nota_fiscal.rb	class AddClienteIdToNotaFiscal 
 AddClienteIdToNotafiscal	C:/Users/SEMP/rails/loggas/db/migrate/20130114225913_add_cliente_id_to_notafiscal.rb	class AddClienteIdToNotafiscal 
 AddNomeFromCliente	C:/Users/SEMP/rails/loggas/db/migrate/20130111165114_add_nome_from_cliente.rb	class AddNomeFromCliente 
